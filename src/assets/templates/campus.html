@@ -4,6 +4,13 @@
 
     <h1 class="cc-heading-page-title" data-ng-bind="currentTopCategory"></h1>
 
+    <div class="cc-widget" data-ng-if="currentTopCategory === 'Food & Housing'">
+      <div class="cc-widget-title">
+        <h2>Today's Menus</h2>
+      </div>
+      <div data-ng-include="'campus_menu_list.html'"></div>
+    </div>
+
     <div class="cc-widget" data-ng-if="currentTopCategory">
       <div class="cc-widget-title">
         <h2>Links</h2>
